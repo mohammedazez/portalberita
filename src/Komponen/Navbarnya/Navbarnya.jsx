@@ -1,5 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './Navbarnya.css';
 
 
@@ -17,9 +18,11 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
 
+
 const Navbarnya = () => {
     return (
         <div>
+
 <Navbar variant="dark" className="navini text-white" style={{ backgroundImage: 'linear-gradient(to right,#0E0C58, #0C3458, #07A8CB,#07A8CB)' }}>
       <Container fluid>
         <Navbar.Brand href="#home">
@@ -86,3 +89,4 @@ const Navbarnya = () => {
 }
 
 export default Navbarnya;
+
