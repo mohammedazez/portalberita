@@ -8,7 +8,7 @@ import axios from 'axios'
 const Bodynya = () => {
     const [data, setData] = useState([])
     const tampilkanBerita = () => {
-        axios.get("https://newsapi.org/v2/top-headlines?country=us&apiKey=433d6559a40f4b37822ee501e52d8e2b")
+        axios.get("https://newsapi.org/v2/top-headlines?country=id&apiKey=433d6559a40f4b37822ee501e52d8e2b")
             .then((response) => {
                 setData(response.data.articles)
             })
@@ -28,7 +28,7 @@ const Bodynya = () => {
                                 <div className="col-3" >
                                     <div className="m-3">
                                         <div className="Card p-5 " style={{ width: '18rem', border: '5px solid #07A8CB' }}>
-                                            <img src={value.urlToImage} className="card-img-top mb-4" style={{ height: '200px', width: '200px' }} alt="..." />
+                                            <img src={value.urlToImage} className="card-img-top mb-4" style={{ height: '200px', width: '220px' }} alt="..." />
                                             <div className="Card-Body" >
                                                 <h5 className="Card-Title text-white" >{value.title}</h5>
                                                 <p className="Card-Text text-primary" >
