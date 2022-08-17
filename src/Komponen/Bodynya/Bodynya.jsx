@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
+
+
 // import Button from 'react-bootstrap/Button';
 // import Card from 'react-bootstrap/Card';
 
 import axios from 'axios'
+
 
 
 const Bodynya = () => {
@@ -22,12 +25,12 @@ const Bodynya = () => {
             setData(result.data.articles)
         }
         fetchData()
-    })
+    },[data])
 
 
     return (
 
-        <div className="container">
+        <div className="container" seacrhText={(search) => setData (search)}>
 
 
             {/* tombolnya */}
@@ -37,6 +40,8 @@ const Bodynya = () => {
 
 
             <div className="container">
+                
+                
                 <div className="row mt-5 mb-5 "  >
                     {
                         data.map((value) => {

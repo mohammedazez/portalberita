@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './Navbarnya.css';
@@ -19,7 +19,13 @@ import Button from 'react-bootstrap/Button';
 
 
 
-const Navbarnya = () => {
+const Navbarnya = ({seacrhText}) => {
+  const [search, setSearch] = useState('');
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    seacrhText(search);
+  }
+
     return (
         <div>
 
@@ -71,12 +77,13 @@ const Navbarnya = () => {
           </Nav>
 
           <Nav>
-          <Form className="d-flex">
+          <Form className="d-flex" onSubmit={handleSubmit}>
             <Form.Control
               type="search"
               placeholder="Pencarian"
               className="me-2"
               aria-label="Search"
+              onChange={(e) => setSearch(e.target.value)}
             />
             <Button className="findHandler"  >Cari</Button>
           </Form>
