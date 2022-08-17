@@ -35,7 +35,7 @@ const Bodynya = () => {
                 <button onClick={tampilkanBerita}>Tampilkan Berita</button>
             </div> */}
 
-            
+
             <div className="container">
                 <div className="row mt-5 mb-5 "  >
                     {
@@ -46,8 +46,9 @@ const Bodynya = () => {
                                         <div className="Card p-4 " style={{ height: '750px', width: '300px', border: '15px solid #07A8CB' }}>
                                             <img src={value.urlToImage} className="card-img-top mb-4 ml-3" style={{ height: '200px', width: '220px' }} alt="..." />
                                             <div className="Card-Body" >
-                                                <h5 className="Card-Title text-white" >{value.title}</h5>
-                                                <p className="Card-Text text-primary" >
+                                                <h5 className="Card-Title text-warning " >{value.title}</h5>
+                                                <h6 className="mt-2 mb-2 Card-Subtitle text-primary">{value.publishedAt}</h6>
+                                                <p className="Card-Text text-white" >
                                                     {value.description}
                                                 </p>
                                                 <a className="btn btn-primary" href={value.url} >View</a>
