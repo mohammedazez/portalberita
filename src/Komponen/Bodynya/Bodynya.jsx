@@ -7,6 +7,8 @@ import axios from 'axios'
 
 const Bodynya = () => {
     const [data, setData] = useState([])
+
+    //pake tombol untuk show data
     // const tampilkanBerita = () => {
     //     axios.get("https://newsapi.org/v2/top-headlines?country=id&apiKey=433d6559a40f4b37822ee501e52d8e2b")
     //         .then((response) => {
@@ -26,9 +28,14 @@ const Bodynya = () => {
     return (
 
         <div className="container">
+
+
+            {/* tombolnya */}
             {/* <div>
                 <button onClick={tampilkanBerita}>Tampilkan Berita</button>
             </div> */}
+
+            
             <div className="container">
                 <div className="row mt-5 mb-5 "  >
                     {
