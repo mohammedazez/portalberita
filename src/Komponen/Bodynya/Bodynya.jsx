@@ -18,7 +18,7 @@ const Bodynya = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const result = await axios.get("https://newsapi.org/v2/top-headlines?country=id&apiKey=433d6559a40f4b37822ee501e52d8e2b")
+            const result = await axios.get("https://newsapi.org/v2/top-headlines?country=id&category=health&apiKey=433d6559a40f4b37822ee501e52d8e2b")
             setData(result.data.articles)
         }
         fetchData()
@@ -51,7 +51,7 @@ const Bodynya = () => {
                                                 <p className="Card-Text text-white" >
                                                     {value.description}
                                                 </p>
-                                                <a className="btn btn-primary" href={value.url} >Read More</a>
+                                                <a className="btn btn-primary" href={value.url} target="_blank" rel="noopener noreferrer">Read More</a>
                                             </div>
                                         </div>
 
