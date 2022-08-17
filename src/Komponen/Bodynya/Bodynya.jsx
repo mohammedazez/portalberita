@@ -51,7 +51,7 @@ const Bodynya = () => {
                                                 <p className="Card-Text text-white" >
                                                     {value.description}
                                                 </p>
-                                                <a className="btn btn-primary" href={value.url} >View</a>
+                                                <a className="btn btn-primary" href={value.url} >Read More</a>
                                             </div>
                                         </div>
 
