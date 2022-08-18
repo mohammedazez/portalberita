@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
 
-
+// import Navbarnya from "../Navbarnya/Navbarnya";
 // import Button from 'react-bootstrap/Button';
 // import Card from 'react-bootstrap/Card';
 
 import axios from 'axios'
+
 
 
 
@@ -30,7 +31,8 @@ const Bodynya = () => {
 
     return (
 
-        <div className="container" seacrhText={(search) => setData (search)}>
+        <div className="container" >
+           
 
 
             {/* tombolnya */}

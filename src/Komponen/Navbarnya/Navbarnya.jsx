@@ -1,4 +1,5 @@
-import React, {useState} from "react";
+import React from "react";
+// import React , {useState} from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './Navbarnya.css';
@@ -15,16 +16,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 
 
 
-const Navbarnya = ({seacrhText}) => {
-  const [search, setSearch] = useState('');
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    seacrhText(search);
-  }
+const Navbarnya = () => {
+  
+  
 
     return (
         <div>
@@ -77,15 +75,19 @@ const Navbarnya = ({seacrhText}) => {
           </Nav>
 
           <Nav>
-          <Form className="d-flex" onSubmit={handleSubmit}>
+          <Form className="d-flex"  >
             <Form.Control
               type="search"
               placeholder="Pencarian"
-              className="me-2"
+              className="me-2 fa fa-search"
               aria-label="Search"
-              onChange={(e) => setSearch(e.target.value)}
+              
             />
-            <Button className="findHandler"  >Cari</Button>
+          
+            
+
+
+            {/* <Button className="findHandler" >Cari</Button> */}
           </Form>
           </Nav>
         </Navbar.Collapse>
