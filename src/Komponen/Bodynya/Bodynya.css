@@ -4,3 +4,9 @@
     box-shadow : 0px 0px 10px rgba(6, 146, 226, 0.603) !important;
     
 }
+
+.ini:hover {
+    cursor: pointer;
+    background-color: #0c6a9681;
+    box-shadow : 0px 0px 10px rgba(6, 146, 226, 0.603) !important;
+}

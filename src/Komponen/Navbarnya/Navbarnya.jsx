@@ -14,13 +14,21 @@ import gps from './Image/gps.png';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Dropdown from 'react-bootstrap/Dropdown';
+// import Dropdown from 'react-bootstrap/Dropdown';
 import Form from 'react-bootstrap/Form';
+// import Bodynya  from "../Bodynya/Bodynya";
 // import Button from 'react-bootstrap/Button';
+//import handleSport
+// import {handleSport} from "../Bodynya/Bodynya";
+
 
 
 
 const Navbarnya = () => {
+
+    
+    
+    
   
   
 
@@ -56,21 +64,21 @@ const Navbarnya = () => {
             
             
 
-    <Dropdown className="ml-5 dropdownya">
+    {/* <Dropdown className="ml-5 dropdownya">
       <Dropdown.Toggle className="title" align="end" style={{ backgroundColor: '#ff000000', border: 'none'  }}>
         Kategori Berita
       </Dropdown.Toggle>
 
       <Dropdown.Menu className="dropmenu text-white">
-        <Dropdown.Item className="text-white" href="#headline">HeadLine News</Dropdown.Item>
+        <Dropdown.Item className="text-white" href="#headline" id="headline" >HeadLine News</Dropdown.Item>
         <hr className="hrmenu "/>
-        <Dropdown.Item className="text-white" href="#sports">Aksi & Olahraga</Dropdown.Item>
-        <Dropdown.Item className="text-white" href="#business">Bisnis</Dropdown.Item>
-        <Dropdown.Item className="text-white" href="#entertainment">Hiburan</Dropdown.Item>
-        <Dropdown.Item className="text-white" href="#kesehatan">Kesehatan</Dropdown.Item>
-        <Dropdown.Item className="text-white" href="#technology">Teknologi</Dropdown.Item>
+        <Dropdown.Item className="text-white" href="#sports" id="sport">Aksi & Olahraga</Dropdown.Item>
+        <Dropdown.Item className="text-white" href="#business" id="business">Bisnis</Dropdown.Item>
+        <Dropdown.Item className="text-white" href="#entertainment" id="entertainment">Hiburan</Dropdown.Item>
+        <Dropdown.Item className="text-white" href="#kesehatan" id="kesehatan">Kesehatan</Dropdown.Item>
+        <Dropdown.Item className="text-white" href="#technology" id="technology">Teknologi</Dropdown.Item>
       </Dropdown.Menu>
-   </Dropdown>
+   </Dropdown> */}
    
           </Nav>
 
@@ -83,6 +91,7 @@ const Navbarnya = () => {
               aria-label="Search"
               
             />
+            
           
             
 
