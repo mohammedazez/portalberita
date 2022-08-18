@@ -5,40 +5,13 @@ import Nav from 'react-bootstrap/Nav';
 // import Navbarnya from "../Navbarnya/Navbarnya";
 // import Button from 'react-bootstrap/Button';
 // import Card from 'react-bootstrap/Card';
-
-import axios from 'axios'
-
-
+import axios from "axios";
 
 const Bodynya = () => {
     const [data, setData] = useState([])
     const [kategori, setKategori] = useState('')
 
-    //function untuk pencarian 
-    // const handleSearch = (e) => {
-    //     setKategori(e.target.value)
-    // }
-    //function untuk menampilkan data
-    // const handleShow = () => {
-    //     axios.get(`http://localhost:3001/api/v1/product?kategori=${kategori}`)
-    //         .then(res => {
-    //             setData(res.data.result)
-    //         }).catch(err => {
-    //             console.log(err)
-    //         }
-    //         )
-    // }
-    //function untuk menampilkan data
-    // const handleShowAll = () => {
-    //     axios.get(`http://localhost:3001/api/v1/product`)
-    //         .then(res => {
-    //             setData(res.data.result)
-
-    //         }).catch(err => {
-    //             console.log(err)
-    //         }
-    //         )
-    // }
+   
 
 
     //import dropdown Kateogri Berita dari 
