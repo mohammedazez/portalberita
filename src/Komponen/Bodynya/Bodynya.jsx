@@ -49,6 +49,7 @@ const Bodynya = () => {
     const ENTERTAINMENT_NEWS = 'https://newsapi.org/v2/top-headlines?country=id&category=entertainment&apiKey=' + API_KEY
     const HEALTH_NEWS = 'https://newsapi.org/v2/top-headlines?country=id&category=health&apiKey=' + API_KEY
     const TECHNOLOGY_NEWS = 'https://newsapi.org/v2/top-headlines?country=id&category=technology&apiKey=' + API_KEY
+    
 
 
 
